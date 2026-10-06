@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <link href="css/oef3.css" rel="stylesheet">
+    <title>Smurfenformulier - Bevestiging</title>
+</head>
+<body>
+<p>
+    Bedankt voor het versturen van de gegevens.
+</p>
+
+<p>
+    Hieronder zie je alle data die in de url zijn meegegeven na het verzenden
+    van het formulier.
+</p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const entries = params.entries();
+    for (const [key, value] of entries) {
+        const p = document.createElement("p");
+        p.textContent = `${key}: ${value}`;
+        document.body.appendChild(p);
+    }
+</script>
+</body>
+</html>

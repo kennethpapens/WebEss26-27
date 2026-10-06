@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  width: 800px;
+  margin: 2rem;
+  border:1px solid blue;
+}
+td {
+  border: 1px dashed blueviolet;
+  border-collapse: collapse;
+}
+thead td {
+  font-weight: bold;
+  text-align: center;
+}

@@ -2,8 +2,42 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+}
+header, footer {
+  text-align: center;
+  margin: 2rem;
 }
 
 body {
   line-height: 1.5; /* Do not remove this line */
+  background-color: #dceeff;
+  color: #1f2937;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+
+}
+.smurf-gallery {
+  display: grid;
+  background-color: #ffffff;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+}
+.page-shell {
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+img{
+  max-width: 120px;
+  float: right;
+
+}
+
+.card-badge{
+  border-radius: 15px;
 }
